@@ -1,0 +1,88 @@
+description = "meh."
+==
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>{{ this.page.meta_title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}" />
+        
+        <meta property="og:title" content="{{ this.page.meta_title }}" />
+        <meta property="og:description" content="{{ this.page.meta_description }}" />
+        <meta property="og:image" content="{{ 'assets/img/fb-cover.jpg'|theme }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ ''|app }}" />
+    
+    
+        <meta name="twitter:title" content="{{ this.page.meta_title }}" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="{{ ''|app }}" />
+        <meta name="twitter:description" content="{{ this.page.meta_description }}" />
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ ['assets/css/main.css']|theme }}">
+    </head>
+    
+    <body>
+        <main class="main clearfix">        
+
+            <nav class="navbar navbar-default">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="nav-wrapper">
+                    
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">MENU</span>
+                      </button>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.facebook.com/events/1601235640139338/"><img src="{{ '/assets/img/fb.png'|theme }}" alt="Facebook"></a></li>
+                    </ul>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav menu">
+                        {% placeholder navLinks %}
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+              </div><!-- /.container-fluid -->
+            </nav>
+
+            {% page %}
+
+            <article class="partners block grey-bg" id="partneri">
+                <div class="container">
+                    <header class="headline"><h2>Partneri</h2></header>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 partner halmi">
+                            <a href="http://halmihodvor.sk" target="_blank"><img src="{{ 'assets/img/01-halmi.png'|theme }}" alt="Halmiho dvor"></a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 partner somsak">
+                            <a href="http://somsak.sk"  target="_blank"><img src="{{ 'assets/img/02-somsak.png'|theme }}" alt="Svetozár Šomšák"></a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 partner artforum">
+                            <a href="http://artforum.sk"  target="_blank"><img src="{{ 'assets/img/03-artforum.png'|theme }}" alt="Artforum"></a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 partner ticketportal">
+                            <a href="http://ticketportal.sk"  target="_blank"><img src="{{ 'assets/img/04-ticketportal.png'|theme }}" alt="Ticketportal"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 partner premiumhosting">
+                            <a href="http://premiumhosting.sk"  target="_blank"><img src="{{ 'assets/img/05-premiumhosting.png'|theme }}" alt="Ticketportal"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="{{ 'assets/js/main.js'|theme }}"></script>
+    </body>
+
+</html>

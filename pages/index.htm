@@ -1,0 +1,128 @@
+title = "index"
+url = "/"
+layout = "layout"
+is_hidden = "0"
+meta_title = "Igrici na ulici | Pesníčkarsky festival v Košiciach"
+meta_description = "Igrici na ulici je prvý ročník pesničkárskeho festivalu, ktorý má ambíciu ponúknuť autentickú atmosféru hrania pod otvorenou oblohou košického Halmi ho dvora."
+==
+{% put navLinks %}
+    <li><a href="#o-festivale">O festivale</a></li>
+    <li><a href="#organizatori">Organizátori</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#partneri">Partneri</a></li>
+{% endput %}
+
+<div itemscope itemtype="http://schema.org/Event">
+
+    <div class="container">
+        <h1 class="hero-img">
+            <span itemprop="name" class="sr-only">Igrici na ulici. Pesníčkarsky festival Košice</span>
+            <span itemprop="startDate" content="2015-08-15" />
+            <div class="event-price sr-only" itemprop="price" content="6.00">6.00€</div>
+            <span itemprop="priceCurrency" content="EUR" />
+            <img class="hero-big" src="{{ 'assets/img/igrici-banner-big.png'|theme }}" alt="Igrici na ulici">
+            <img class="hero-small" src="{{ 'assets/img/igrici-banner-small.png'|theme }}" alt="Igrici na ulici">
+        </h1>
+    </div>
+
+    <div class="boxes grey-bg clearfix">
+        <div class="container">
+            <div class="col-md-4 col-xs12 box">
+                <a href="{{ 'program'|page }}">
+                    <img src="{{ 'assets/img/program.png'|theme }}" alt="">
+                    <h4 class="tagline">Program</h4>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-xs12 box">
+                <a href="{{ 'ucinkujuci'|page }}">
+                    <img src="{{ 'assets/img/ucinkujuci.png'|theme }}" alt="">
+                    <h4 class="tagline">Účinkujúci</h4>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-xs12 box">
+                <a itemprop="offers" href="https://www.ticketportal.sk/event.aspx?id=21205">
+                    <img src="{{ 'assets/img/listok.png'|theme }}" alt="">
+                    <h4 class="tagline">Kúp si lístok</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <article class="container clearfix block about" id="o-festivale">
+        <header class="headline"><h2>O festivale</h2></header>
+        <div class="flex-row">
+            <div class="col first-col">
+                <img src="{{ 'assets/img/ico-igrici.png'|theme }}" alt="Igrici na ulici">
+            </div>
+            <div class="col second-col">
+                <h3>História</h3>
+
+                <p>Igrici boli stredovekí potulní umelci, ktorí od hradu ku hradu hrali a zabávali na dvoroch, na jarmokoch, na ulici.</p>
+
+                <h3>Festival</h3>
+
+                <p>Igrici na ulici je prvý ročník pesničkárskeho festivalu, ktorý má ambíciu ponúknuť autentickú atmosféru hrania pod otvorenou oblohou košického Halmiho dvora. Pesničkárstvo a ulica patria k sebe a dotvárajú kolorit letného mesta plného turistov a návštevníkov. Kombinácia pesničkárstva a ulice to je aj vytváranie komunitného obrazu mesta.</p>
+
+                <p>Okrem hlavných účinkujúcich Martina Geišberga, Eda Klenu a Petra Janků, ktorým bude patriť večerný program, sa budú v priebehu poobedia na pódiu striedať známejší aj menej známi pesničkári a pesničkárky. Festival Igrici na ulici je pokračovaním štvorročnej tradície otvorených mikrofónov, ktorá sa spája s priestorom HalmiCaffe a s čajovňou Amana.</p>
+
+                <p>V piatok 14. augusta 2015 od 15.00 do 22.00 bude Halmiho dvor patriť priaznivcov pesničkárstva ale aj fanúšikom dobrého čaju a voňavej kávy.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="organizers block grey-bg" id="organizatori">
+        <div class="container">
+            <header class="headline"><h2>Organizátori</h2></header>
+            <div class="flex-row org-igrici">
+                <div class="col first-col">
+                    <img src="{{ 'assets/img/org-igricioz.png'|theme }}" alt="Igrici na ulici">
+                </div>
+                <div class="col second-col">
+                    <h3>Igrici na koberci, o. z.</h3>
+
+                    <p>Hlavným poslaním občianskeho združenie Igrici na koberci je na základe dobrovoľnosti a záujmu spájať ľudí, ktorí majú pozitívny vzťah k umeniu a predovšetkým k hudbe; budovanie komunitného prostredia, v ktorom sa stretávajú ľudia so záujmom autorsky sa prezentovať a zažiť autentickosť diváckej odozvy.</p>
+                </div>
+            </div>
+            <div class="flex-row org-halmicaffe">
+                <div class="col first-col">
+                    <img src="{{ 'assets/img/org-halmicaffe.png'|theme }}" alt="Igrici na ulici">
+                </div>
+                <div class="col second-col">
+                    <h3>HalmiCaffe</h3>
+
+                    <p>Košická vintage kaviareň, kde kvalitnú kávu, skvelý čaj a výborné víno predčí len inšpiratívna atmosféra ochutnávok, koncertov, vernisáži.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="contact block" id="kontakt">
+        <div class="container">
+            <header class="headline"><h2>Kontakt a mapa</h2></header>
+            <div class="col-md-3 col-xs-12 contact-info">
+                <div itemscope itemtype="http://schema.org/Place">
+                    <strong itemprop="name">Halmiho dvor</strong>
+                    <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                         <span itemprop="streetAddress">Hlavná 21</span>, <br>
+                         <span itemprop="postalCode">040 01</span>
+                         <span itemprop="addressLocality">Košice</span>
+                         <span itemprop="addressCountry" content="SK">
+                    </address>
+                </div>
+                <br>
+                <a itemprop="email" href="mailto:info@igricinaulici.sk">info@igricinaulici.sk</a> <br>
+                <a href="tel:0908634199">0908 634 199</a> <br>
+                <a href="http://igricinaulici.sk" itemprop="url">http://igricinaulici.sk</a>
+            </div>
+
+            <div class="col-md-9 col-xs-12">
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1716.7050958804964!2d21.259277271433582!3d48.71938296622971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee07aa9a4d497%3A0xa12314967156dfc!2sHalmiCaffe!5e0!3m2!1ssk!2ssk!4v1436966212804" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</div>

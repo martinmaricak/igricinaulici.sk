@@ -1,0 +1,292 @@
+/**
+ * General layout customization
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+ body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+
+ h2 {
+    color: #808080;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+ }
+
+ h2:before, h2:after {
+    content: "\2014";
+    padding: 0 8px;
+ }
+
+h3, .timespan {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: #f18700;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.grey-bg {
+    background-color:  #ebebeb;
+}
+
+.block {
+    padding: 24px 0 48px;
+}
+
+.round-border {
+    border-radius: 100%;
+    border: 10px solid #ebebeb;
+}
+
+.grey-bg .round-border {
+    border-color: #fff;
+}
+
+
+/**
+ * Navbar customization
+ */
+
+ .navbar {
+    margin: 0;
+    border: none;
+    background-color: #f18700;
+    border-radius: 0;
+ }
+
+.navbar-toggle {
+    width: 32px;
+    height: 32px;
+    background: url('../img/navbar-toggle.png') 0 0 scroll no-repeat transparent;
+    float: left;
+    margin-left: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.navbar-toggle:hover, .navbar-toggle:active {
+    background-color: transparent !important;
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+.nav-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar .menu {
+    padding: 6px 0;
+}
+
+.navbar .menu li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/**
+ * Hero image
+ */
+
+.hero-img {
+    margin: 0;
+    text-align: center;
+}
+
+ .hero-small {
+    display: none;
+ }
+
+ @media all and (max-width: 992px) {
+    .hero-small {
+        display: inline;
+    }
+
+    .hero-big {
+        display: none;
+    }
+ }
+
+
+ /**
+ * Boxes
+ */
+
+ .boxes {
+    padding: 32px 0 0;
+ }
+
+ .box {
+    text-align: center;
+    margin-bottom: 32px;
+ }
+
+ .box > a {
+    color: inherit;
+ }
+
+ .box > a:hover {
+    text-decoration: none;
+    color: inherit;
+ }
+
+ .box > a img {
+    -ms-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+ }
+
+ .box > a:hover img {
+    -webkit-transform: scale(0.97, 0.97);
+    transform: scale(0.97, 0.97);
+ }
+
+ .box .tagline {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 8px;
+    text-transform: uppercase;
+ }
+
+
+ /**
+ * Text parts
+ */
+
+ .first-col {
+    display: none;
+ }
+
+ @media all and (max-width: 768px) {
+    .flex-row {
+        padding: 0 64px;
+    }
+ }
+
+ @media all and (min-width: 992px) {
+     .flex-row {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+     }
+
+     .first-col {
+        display: block;
+        width: 40%;
+        margin-right: 48px;
+        text-align: right;
+     }
+
+     .second-col {
+        width: 90%;
+     }
+ }
+
+ .headline {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+ /**
+ * Organizers
+ */
+
+ .org-igrici {
+    margin-bottom: 48px;
+ }
+
+
+ /**
+ * Google Maps
+ */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+ /**
+ * Contact
+ */
+
+ .contact-info {
+    margin-bottom: 48px;
+ }
+
+
+  /**
+ * Program
+ */
+
+ .program-unit {
+    padding: 24px 0;
+ }
+
+ .timespan {
+    color: #000;
+    font-weight: 500;
+    font-size: 24px;
+ }
+
+
+ /**
+ * Atendees
+ */
+
+ .avatar-box {
+    text-align: center;
+ }
+
+
+ /**
+ * Partners
+ */
+
+.partner {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.halmi img {
+    padding-top: 5px;
+}
+
+.artforum img {
+    padding-top: 10px;
+}
+
+.ticketportal img {
+    padding-top: 12px;
+}

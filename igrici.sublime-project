@@ -1,0 +1,22 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"gulp watch"
+			],
+			"name": "Gulp"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "/"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2
+	}
+}
